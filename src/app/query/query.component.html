@@ -1,0 +1,33 @@
+<div class="margin" >
+    <div class="mb-4">
+        <label for="Query">Database Connection_ID:</label>
+        <input type="text" id="Connection_ID" placeholder="Enter Connection_ID">
+    </div>
+
+    <div class="mb-4">
+        <label for="Query">Query_ID:</label>
+        <input type="text" id="Query_ID" placeholder="Enter Query_ID">
+    </div>
+
+    <div class="mb-4">
+        <label for="Query">Name:</label>
+        <input type="text" id="Name" placeholder="Enter Name">
+    </div>
+
+    <div class="mb-4">
+        <label for="Query">Query:</label>
+        <input type="text" id="Query" placeholder="Enter Query">
+    </div>
+
+    <div class="mb-4">
+        <label for="Query">Parameters:</label>
+        <input type="text" id="Query_parameter" placeholder="Enter no. of Parameters">
+    </div>
+
+    <div class="container-fluid">
+        <div class="mb-3"></div>
+            <button type="submit" class="btn btn-success" routerLink="queryparameter" >Submit</button>
+        </div>
+    <div  (submit)="query()"></div>
+</div>
+<router-outlet></router-outlet>

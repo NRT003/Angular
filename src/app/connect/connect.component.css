@@ -1,0 +1,39 @@
+button
+{
+   background-color: darkgreen; 
+   color:#e1dfd9;
+   margin-left: 100px;
+}
+
+#Server_IP
+{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#Port_No
+{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#Username
+{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#password
+{
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+#connect
+{
+    top:0%;
+    bottom: 0%;
+    margin-top: 100px;
+    margin-left: 550px;
+    
+}

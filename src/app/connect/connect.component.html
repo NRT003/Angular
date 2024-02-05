@@ -1,0 +1,67 @@
+<div class="margin" id="connect">
+  <div class="row=1">
+    <div class="mb-5">
+      <option selected>Select Databases</option>
+      <select id="selectedOption" [(ngModel)]="selectedOption">
+        <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+      </select>
+      <p *ngIf="connected"></p> 
+    </div>
+  </div>
+   
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="mb-5">  
+        <option select>Select DataSources</option>
+        <select id="selectOption" [(ngModel)]="selectOption">
+          <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+        </select>
+        <p *ngIf="connected"></p>
+       </div>  
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="mb-4">
+        <label for="IP">Server_IP:</label>
+        <input type="Server_IP" id="Server_IP" placeholder="For eg:192.158.1.38">
+      </div>
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="mb-4">
+        <label for="Port_No">Port_No:</label>
+        <input type="Port_No" id="Port_No" placeholder="For eg:8080">
+      </div>
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="mb-4">
+        <label for="Username">Username:</label>
+        <input type="text" id="Username" placeholder="Enter Username">
+      </div>
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="mb-3">
+        <label for="Password">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password">
+      </div>
+    </div>
+  </div>
+    
+    <div class="container-fluid">
+      <div class="mb-3"></div>
+      <button type="submit" class="btn btn-success" routerLink="query" >Connect</button>
+    </div>
+  <div  (submit)="connect()"></div>
+</div>
+<router-outlet></router-outlet>
+  
